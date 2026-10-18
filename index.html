@@ -1,0 +1,60 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om SmartSole - Online Shoe Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>👟 Om SmartSole</h1>
+        <p>Discover Your Perfect Pair</p>
+        <p class="subtitle">Quality shoes. Smart prices. Easy shopping.</p>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Our Shoe Collection</h2>
+            <p class="section-description">
+                Explore new and pre-owned shoes from popular brands.
+            </p>
+            <div id="product-list" class="product-grid"></div>
+        </section>
+
+        <section class="order-section">
+            <h2>Customer Information</h2>
+            <p>Enter your details to place your order.</p>
+
+            <form id="orderForm">
+                <label for="customerName">Full Name</label>
+                <input id="customerName" type="text"
+                       placeholder="Enter your name" required>
+
+                <label for="customerEmail">Email Address</label>
+                <input id="customerEmail" type="email"
+                       placeholder="Enter your email" required>
+
+                <label for="customerAddress">Delivery Address</label>
+                <textarea id="customerAddress"
+                          placeholder="Enter delivery address"
+                          rows="3" required></textarea>
+
+                <button type="submit" class="order-button">
+                    Place Order
+                </button>
+            </form>
+
+            <div id="bill" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Om SmartSole | Step Into Style 👟</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
